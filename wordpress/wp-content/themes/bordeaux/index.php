@@ -14,7 +14,7 @@
                 comments_template();
                 endwhile; ?>
                 </div>
-        </div>
+    </div>
 
         <?php get_sidebar(); ?>
     </div>

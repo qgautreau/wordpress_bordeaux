@@ -37,9 +37,23 @@ h2 {
     margin: 1em 0;
 }
 
+form.search-form:nth-child(2) > label:nth-child(1) > input:nth-child(2) {
+    margin-top: 3em;
+    width: 100%;
+}
+
 /*MAIN*/
+
+
 #principimage {
     width: 100%;
+}
+
+.mh-loop {
+    border-right: solid 2px rgb(212, 212, 212);
+    padding-right: 1.5em;
+    width: 72%;
+
 }
 
 section {
@@ -49,10 +63,58 @@ section {
 div.mh-content:nth-child(3) {
     width: 100%;
     display: flex;
+    justify-content: space-between;
+}
+
+.miniposts {
+    width: 32%;
 }
 
 h3.entry-title {
     font-family: STIX;
     font-size: 20px;
-    text-align: center;
+}
+
+.mh-header-text, .submenu,  .mh-site-logo{
+   display: flex;
+   justify-content: space-around;
+}
+
+.aheader {
+
+   display: flex;
+
+   flex-direction: column;
+
+}
+
+.submenu {
+
+   font-size: 10px;
+
+}
+
+.submenu a {
+
+   color:red;
+
+}
+
+.aheader {
+
+   padding: 0 2em;
+
+}
+
+a{
+
+   color: rgb(117, 114, 117);
+
+}
+
+/*SIDEBAR*/
+
+.mh-sidebar {
+    width: 22%;
+    float: right;
 }
