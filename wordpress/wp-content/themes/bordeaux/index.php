@@ -1,45 +1,22 @@
 <?php get_header(); ?>
 <div class="mh-wrapper clearfix">
     <div id="main-content" class="mh-loop mh-content" role="main">
-
         <article class="principal">
             <img id="principimage" src="http://lorempixel.com/632/300/sports" alt="image principal">
         </article>
 
         <h2>Actualités</h2>
 
-        <section>
-            <article class="miniposts">
-                <img src="http://lorempixel.com/200/126/sports" alt="">
-                <div class="minidiv">
-                    <h3>Ouverture</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                <div id="main-content" class="mh-content" role="main" itemprop="mainContentOfPage"><?php
+                while (have_posts()) : the_post();
+                mh_before_page_content();
+                get_template_part('content', 'page');
+                comments_template();
+                endwhile; ?>
                 </div>
-            </article>
+        </div>
 
-            <article class="miniposts">
-                <img src="http://lorempixel.com/200/126/sports" alt="">
-                <div class="minidiv">
-                    <h3>La culture en chiffres</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                </div>
-            </article>
-
-            <article class="miniposts">
-                <img src="http://lorempixel.com/200/126/sports" alt="">
-                <div class="minidiv">
-                    <h3>Elections</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                </div>
-            </article>
-        </section>
+        <?php get_sidebar(); ?>
     </div>
 
-    <?php
-    mh_magazine_lite_pagination();
-    ?>
-
-    <?php get_sidebar(); ?>
-
-</div>
 <?php get_footer(); ?>

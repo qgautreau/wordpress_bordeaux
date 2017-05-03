@@ -38,27 +38,21 @@ h2 {
 }
 
 /*MAIN*/
+#principimage {
+    width: 100%;
+}
 
 section {
-    width: 632px;
     display: flex;
-    justify-content: space-between;
 }
 
-.miniposts {
-    width: 200px;
-    /*height: 125px;*/
+div.mh-content:nth-child(3) {
+    width: 100%;
+    display: flex;
 }
 
-h3 {
+h3.entry-title {
     font-family: STIX;
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
-    font-weight: 600;
-    padding: 0.25em 0;
-}
-
-.minidiv {
-    background-color: rgb(214, 214, 214);
-
 }
